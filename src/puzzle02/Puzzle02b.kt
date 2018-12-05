@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     val sortedIds = ids.sorted()
 
     for (i in 0 .. (sortedIds.size-2)) {
-        val idx = compare(, sortedIds[i+1])
+        val idx = compare(sortedIds[i], sortedIds[i+1])
         if (idx != -1) {
             val id = sortedIds[i]
             println(id.substring(0, idx) + id.substring(idx+1, id.length))
