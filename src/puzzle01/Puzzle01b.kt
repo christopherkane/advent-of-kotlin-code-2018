@@ -1,10 +1,12 @@
+package puzzle01
+
 import java.io.File
 
 fun main(args: Array<String>) {
 
     val inputFrequencyChanges: MutableList<Int> = mutableListOf()
 
-    File("src/input_01.txt").forEachLine {
+    File("src/puzzle01/input.txt").forEachLine {
         s -> inputFrequencyChanges.add(s.toInt())
     }
 
